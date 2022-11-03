@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+  background-color: #1f2833;
+  font-family: 'Montserrat', sans-serif;
+}
+header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.navcontent li {
+  display: inline-block;
+  padding: 10px;
+}
+.navcontent li{
+  transition: text-decoration 0.5s linear;
+}
+.navcontent li:hover {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.navcontent {
+  list-style: none;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+}
+.card1 {
+  max-width: 500px;
+  padding-bottom: 10px;
+  border: 1px solid white;
+  margin-left: 90px;
+  box-shadow: 10px 10px 50px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+.card1 img{
+  transition: transform 0.5s linear;
+}
+.card1:hover img{
+  transform: scale(1.054);
+  opacity: 0.5; 
+}
+.testbtn{
+  position: relative;
+  bottom: 230px;
+  left: 200px;
+  opacity: 0;
+  background-color: aliceblue;
+  border-radius: 10px;
+  border: 1px solid white;
+  width: 100px;
+  height: 50px;
+  
+}
+.card1:hover .testbtn{
+  opacity: 1;
+  background-color:bisque
+}
+
+.card2 {
+  width: 500px;
+  border: 1px solid white;
+  padding-bottom: 10px;
+  box-shadow: 10px 10px 50px rgba(255, 255, 255, 0.2);
+  margin-left: 100px;
+  justify-content: center;
+}
+.txt1,
+.txt2 {
+  padding-left: 10px;
+  color: white;
+}
+
+
+
+
+.food{
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+#img1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recip1{
+  color: #ffffff;
+}
