@@ -40,20 +40,22 @@ header {
   list-style: none;
 }
 
-.cuisines{
+.allcuisines{
   display: flex;
-  position: relative;
+  flex-direction: row;
+  align-items: center;
   height: 300px;
+  margin-bottom:20px;
 }
 .cuisinecard {
-
   margin-right: 100px;
   width: 200px;
   height: 200px;
-  overflow: hidden;
   margin-left: 280px;
   border: 2px solid black;
-  border-radius: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+
 }
 .cuisinecard img{
   width: 100%;
@@ -62,13 +64,17 @@ header {
 
 }
 .cuisinetext{
-  position: absolute;
+  display: contents ;
   font-weight:bolder;
-  bottom: 100px;
-  left: 290px;
-  font-size:30px;
+  font-size:20px;
+  margin-top: 20px;
+  margin-left: 20px;
   background-color: aliceblue;
-
+}
+.cuisinetext h3{
+  text-align:center;
+  padding-top: 20px;
+  padding-left: 175px;
 }
 .cards {
   display: flex;
@@ -192,3 +198,129 @@ header {
 
  .textban p{
    font-size: 30px;}
+
+
+
+.profile-card{
+  height: 84vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4%;
+  
+}
+.card-image{
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  height:500px;
+  background-color: rgb(246, 244, 242);
+  border-radius: 15px;
+  padding: 10px;
+}
+.image{
+  
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgb(163, 24, 213);
+  padding: 3px;
+}
+
+.image img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+
+.gohomebtn{
+  background-color: rgb(163, 24, 213);
+  border-radius: 10px;
+  width: 100px;
+  height:50px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  color: white;
+  font-weight:600;
+  box-shadow: 0px 5px 20px rgb(170, 96, 205);
+}
+
+.gohomebtn:hover{
+  cursor: pointer;
+}
+
+.media-icons{
+  position: absolute;
+  padding-top: 50px;
+
+  padding-left: 15px;}
+
+.contactinfo{
+  position: absolute;
+  margin-top: 230px;
+
+}
+
+.contactinfo p{
+  font-size: 18px;
+  text-align: center;}
+
+.contactform{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.contactform form{
+  width: 30rem;
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.499);
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.6);
+  background-image: linear-gradient(43deg, #4159d088 0%, #c850c084 46%, #ffcd706a 100%);
+}
+
+.contactform form input{
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid white;
+  padding: 50px;
+  text-align: center;
+  width: 70%;
+  margin: 5% auto;
+  overflow: scroll;
+}
+
+.contactform label{
+  font-size: 22px;
+  color: white;
+  margin-left: 5%;
+  margin-top: 5%
+}
+.contactform form button{
+  font-size: 18px;
+  color: white;
+  border: none;
+  outline: none;
+  background: transparent;
+  border: 2px solid white;
+  width: 100px;
+  height: 75px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.6);
+  margin-left: 40%;
+  margin-bottom: 5%;
+}
+.contactform button:hover{
+  cursor: pointer;
+}
