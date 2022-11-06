@@ -10,6 +10,9 @@ body{
 header {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .navcontent li a {
@@ -142,8 +145,8 @@ header {
 .ftmenu h2{
   font-weight: 1000;
   font-size: 50px;
+ 
 }
-
 .foot-row{
   padding-top: 50px;
   display: flex;
@@ -168,3 +171,24 @@ header {
  .love{
   text-align: center;
  }
+
+ .webban{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+  margin-left: 50px;
+  margin-right: 50px;   
+ }
+
+ .textban h2{
+  font-family: cursive;
+  font-size: 100px;
+ }
+
+ .textban{
+  padding-top: 100px;
+
+ }
+
+ .textban p{
+   font-size: 30px;}
