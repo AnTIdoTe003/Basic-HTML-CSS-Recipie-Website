@@ -18,9 +18,7 @@ header {
 .navcontent li a {
   color: black;
   font-weight: 900;
-  font-size: larger;
-  
-  
+  font-size: larger; 
   text-decoration: none;
   
 }
@@ -86,16 +84,32 @@ header {
   border: 1px solid black;
   border-radius: 12px;
   margin-left: 90px;
-  box-shadow: 10px 50px 50px rgba(181, 40, 224, 0.2);
+  /* box-shadow: 10px 50px 50px rgba(181, 40, 224, 0.2); */
+  transition: transform 0.5s linear;
   overflow: hidden;
 }
-.card1 img{
-  transition: transform 0.5s linear;
+.card1:hover{
+ box-shadow: 0px 10px 30px rgba(154, 150, 155, 1);
 }
 .card1:hover img{
-  transform: scale(1.054);
+  /* transform: scale(1.054); */
   opacity: 0.5; 
   cursor: pointer;
+  /* transition: transform 0.5s linear; */
+  animation: animation 2s ease-in-out;
+}
+
+@keyframes animation {
+  0% {
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.054);
+  }
+  100%{
+    transform: scale(1);
+  }
+  
 }
 .testbtn{
   position: relative;
